@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>springboot</groupId>
-    <artifactId>springboot-mybatis-mutil-datasource</artifactId>
+    <artifactId>springboot-mybatis-multi-datasource</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-mybatis-mutil-datasource :: Spring Boot 实现 Mybatis 多数据源配置</name>
+    <name>springboot-mybatis-multi-datasource :: Spring Boot 实现 Mybatis 多数据源配置</name>
 
     <!-- Spring Boot 启动父依赖 -->
     <parent>

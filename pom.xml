@@ -29,7 +29,7 @@
 		<!-- Spring Boot 整合 Mybatis Annotation 注解案例 -->
 		<module>springboot-mybatis-annotation</module>
 		<!-- Spring Boot 整合 Mybatis 实现 Druid 多数据源配置 -->
-		<module>springboot-mybatis-mutil-datasource</module>
+		<module>springboot-mybatis-multi-datasource</module>
 
 		<!-- 基础 – 数据缓存篇 -->
 		<!-- Spring Boot 整合 Redis 实现缓存 -->

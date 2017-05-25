@@ -18,15 +18,30 @@ public class CityRestController {
     @Autowired
     private CityService cityService;
 
+    /**
+     * 新增
+     *
+     * @param city
+     * @return Long City编号id
+     */
     @RequestMapping(value = "/api/city", method = RequestMethod.POST)
     public Long createCity(@RequestBody City city) {
         return cityService.saveCity(city);
     }
 
+
+    /**
+     * 查询
+     *
+     * @param pageIndex  mysql中select * from t_city limit pageIndex,pageSize
+     * @param pageSize
+     * @param searchContent
+     * @return List<City>
+     */
     @RequestMapping(value = "/api/city/search", method = RequestMethod.GET)
-    public List<City> searchCity(@RequestParam(value = "pageNumber") Integer pageNumber,
+    public List<City> searchCity(@RequestParam(value = "pageIndex") Integer pageIndex,
                                  @RequestParam(value = "pageSize", required = false) Integer pageSize,
                                  @RequestParam(value = "searchContent") String searchContent) {
-        return cityService.searchCity(pageNumber,pageSize,searchContent);
+        return cityService.searchCity(pageIndex,pageSize,searchContent);
     }
 }

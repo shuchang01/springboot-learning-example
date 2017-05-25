@@ -17,10 +17,10 @@ public interface CityService {
     /**
      * 根据关键词，function score query 权重分分页查询
      *
-     * @param pageNumber
+     * @param pageIndex
      * @param pageSize
      * @param searchContent
      * @return
      */
-    List<City> searchCity(Integer pageNumber, Integer pageSize, String searchContent);
+    List<City> searchCity(Integer pageIndex, Integer pageSize, String searchContent);
 }
