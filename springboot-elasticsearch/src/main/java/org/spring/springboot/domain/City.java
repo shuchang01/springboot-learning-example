@@ -6,11 +6,11 @@ import java.io.Serializable;
 
 /**
  * 城市实体类
- *
+ * <p>
  * Created by bysocket on 03/05/2017.
  */
 @Document(indexName = "cityindex", type = "city")
-public class City implements Serializable{
+public class City implements Serializable {
 
     private static final long serialVersionUID = -1L;
 
