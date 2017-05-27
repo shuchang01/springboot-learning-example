@@ -5,8 +5,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.StopWatch;
 
 import javax.servlet.*;
-import javax.servlet.annotation.WebFilter;
-import javax.servlet.annotation.WebInitParam;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
@@ -17,8 +15,8 @@ import java.io.IOException;
  * 
  * @since Feb 13, 2017
  */
-@WebFilter(filterName = "costFilter", urlPatterns = "/*", initParams = {
-		@WebInitParam(name = "encoding", value = "UTF-8"), @WebInitParam(name = "forceEncoding", value = "true") })
+//@WebFilter(filterName = "costFilter", urlPatterns = "/*", initParams = {
+//		@WebInitParam(name = "encoding", value = "UTF-8"), @WebInitParam(name = "forceEncoding", value = "true") })
 public class RequestCostFilter implements Filter {
 
 	private static final Logger log = LoggerFactory.getLogger(RequestCostFilter.class);
