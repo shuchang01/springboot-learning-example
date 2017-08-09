@@ -18,7 +18,6 @@ import java.io.IOException;
 //@WebFilter(filterName = "costFilter", urlPatterns = "/*", initParams = {
 //		@WebInitParam(name = "encoding", value = "UTF-8"), @WebInitParam(name = "forceEncoding", value = "true") })
 public class RequestCostFilter implements Filter {
-
 	private static final Logger log = LoggerFactory.getLogger(RequestCostFilter.class);
 
 	@SuppressWarnings("unused")
